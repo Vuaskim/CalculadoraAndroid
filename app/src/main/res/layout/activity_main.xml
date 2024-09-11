@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#4a90e2"
+    tools:context=".MainActivity">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:padding="16dp"
+        android:gravity="center_horizontal"
+        android:background="#e0f7fa">
+
+
+        <TextView
+            android:id="@+id/tvResultado"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Resultado:"
+            android:textSize="24sp"
+            android:layout_marginTop="16dp"
+            android:gravity="center"
+            android:textColor="#00796b"/>
+
+
+        <EditText
+            android:id="@+id/etNumero"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Ingrese un número:"
+            android:inputType="numberDecimal"
+            android:layout_marginTop="16dp"
+            android:layout_marginBottom="16dp"
+            android:padding="8dp"
+            android:backgroundTint="#b2dfdb"
+            android:textColor="#004d40"/>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center">
+
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+
+                <Button
+                    android:id="@+id/btnSumar"
+                    android:layout_width="71dp"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10dp"
+                    android:backgroundTint="#00796b"
+                    android:text="+"
+                    android:textSize="24sp"
+                    android:textColor="#ffffff"/>
+
+
+                <Button
+                    android:id="@+id/btnMultiplicar"
+                    android:layout_width="71dp"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10dp"
+                    android:backgroundTint="#00796b"
+                    android:text="x"
+                    android:textSize="24sp"
+                    android:textColor="#ffffff"/>
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+
+                <Button
+                    android:id="@+id/btnRestar"
+                    android:layout_width="71dp"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10dp"
+                    android:backgroundTint="#00796b"
+                    android:text="-"
+                    android:textSize="24sp"
+                    android:textColor="#ffffff"/>
+
+
+                <Button
+                    android:id="@+id/btnDividir"
+                    android:layout_width="71dp"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10dp"
+                    android:backgroundTint="#00796b"
+                    android:text="/"
+                    android:textSize="24sp"
+                    android:textColor="#ffffff"/>
+            </LinearLayout>
+        </LinearLayout>
+
+
+        <Button
+            android:id="@+id/btnIgual"
+            android:layout_width="329dp"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="16dp"
+            android:backgroundTint="#004d40"
+            android:padding="10dp"
+            android:text="="
+            android:textColor="#ffffff"
+            android:textSize="48sp" />
+
+
+        <Button
+            android:id="@+id/btnC"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="16dp"
+            android:backgroundTint="#00796b"
+            android:text="C"
+            android:textSize="24sp"
+            android:padding="10dp"
+            android:textColor="#ffffff"/>
+
+
+        <Button
+            android:id="@+id/btnHistorial"
+            android:layout_width="180dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:backgroundTint="#004d40"
+            android:padding="10dp"
+            android:text="Historial"
+            android:textColor="#ffffff"
+            android:textSize="24sp" />
+    </LinearLayout>
+
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
